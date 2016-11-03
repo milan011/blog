@@ -1,0 +1,14 @@
+/bootstrap/compiled.php
+/vendor
+/node_modules
+.env.*.php
+.env.php
+.env
+web.config
+composer.lock
+DefaultSeeder.php
+.idea
+*.mp3
+/public/html
+/public/assets/*
+!/public/assets/theme
