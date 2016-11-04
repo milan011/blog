@@ -18,16 +18,16 @@
 <header class="am-topbar am-topbar-inverse am-topbar-fixed-top am-kai">
     <div class="am-container">
         <h1 class="am-topbar-brand">
-            <a href="/">Inspirer</a>
+            <a href="/index.php">Inspirer</a>
         </h1>
         <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
         <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
             <ul class="am-nav am-nav-pills am-topbar-nav">
                 @foreach($navs as $nav)
-                    <li><a title="{{ $nav->title }}" href="{{ $nav->link }}">{{ $nav->title }}</a></li>
+                    <li><a title="{{ $nav->title }}" href="{{ $nav->link }}index.php">{{ $nav->title }}</a></li>
                 @endforeach
+                <li><a title="后台" href="/admin">后台</a></li>
             </ul>
-
             <form class="am-topbar-form am-topbar-right am-form-inline" id="search-form" role="search" action="{{ url('search') }}" method="GET">
                 <div class="am-form-group">
                     <input type="text" id="search-keyword" class="am-form-field am-input-sm" placeholder="搜索">
